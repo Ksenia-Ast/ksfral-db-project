@@ -63,7 +63,7 @@ mv <dein_repo> mysite
 ### 2.4 Autodeployment (post-merge Hook)
 Damit Änderungen von GitHub automatisch deployed werden:
 
-1.  Script anlegen und aausführbar machen
+1.  Script anlegen und ausführbar machen
 ``` bash
 cd mysite/.git/hooks
 touch post-merge
