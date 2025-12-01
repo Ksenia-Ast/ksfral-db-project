@@ -40,7 +40,7 @@ def is_valid_signature(x_hub_signature, data, private_key):
 def webhook():
     x_hub_signature = request.headers.get('X-Hub-Signature')
     if is_valid_signature(x_hub_signature, request.data, W_SECRET):
-        repo = git.Repo('./mysite')
+        repo = git.Repo('./KseniaAst')
         origin = repo.remotes.origin
         origin.pull()
         return 'Updated PythonAnywhere successfully', 200
