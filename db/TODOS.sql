@@ -28,6 +28,17 @@ CREATE TABLE Produkt/Zutaten (
     FOREIGN KEY (Zutaten_id) REFERENCES Zutaten(id)
     );
 
+CREATE TABLE Bestellungen (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    Menge INT NOT NULL,
+    Datum DECIMAL(2,2,4)
+    Uhrzeit DECIMAL(2,2),
+    Produkt_id INT NOT NULL,
+    Kunde_id INT NOT NULL,
+    FOREIGN KEY (Produkt_id) REFERENCES Produkt(id)
+    FOREIGN KEY (Kunde_id) REFERENCES Kunde(id)
+    
+    );
 
     
      
