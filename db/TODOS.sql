@@ -63,6 +63,17 @@ CREATE TABLE Mitarbeiter (
     Job Varchar(100) Not NULL
     
 );
+CREATE TABLE Reservierung (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    Datum DECIMAL(2,2,4)
+    Uhrzeit DECIMAL(2,2),
+    Tisch_id INT NOT NULL,
+    Kunde_id INT NOT NULL,
+    Anzahlprs INT(100)
+    FOREIGN KEY (Tisch_id) REFERENCES Tisch(id)
+    FOREIGN KEY (Kunde_id) REFERENCES Kunde(id)
+    
+    );
 
     
      
