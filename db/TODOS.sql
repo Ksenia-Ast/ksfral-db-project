@@ -40,5 +40,29 @@ CREATE TABLE Bestellungen (
     
     );
 
+   
+CREATE TABLE Kunde (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(100) NOT NULL,
+    Email VARCHAR(100) NOT NULL
+    Telefonnummer INT(10) NOT NULL
+    );
+
+CREATE TABLE Tisch(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    Anz.Plätze INT(100) NOT NULL,
+    Bestand BOOLEAN
+    );
+
+CREATE TABLE Mitarbeiter (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(250) NOT NULL UNIQUE,
+    password VARCHAR(250) NOT NULL,
+    Jahre angestellt INT(100),
+    Telefonnummer INT(10) NOT NULL
+    Job Varchar(100) Not NULL
+    
+);
+
     
      
