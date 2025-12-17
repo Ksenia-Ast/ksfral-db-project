@@ -21,7 +21,7 @@ CREATE TABLE Zutat (
     Name VARCHAR(15) NOT NULL,
     Bestand BOOLEAN
     );
-CREATE TABLE Produkt/Zutaten (
+CREATE TABLE ProduktZutaten (
     Produkt_id INT NOT NULL,
     Zutaten_id INT NOT NULL,
     FOREIGN KEY (Produkt_id) REFERENCES Produkt(id)
