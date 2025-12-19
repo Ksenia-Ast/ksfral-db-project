@@ -74,6 +74,7 @@ CREATE TABLE Reservierung (
     FOREIGN KEY (Kunde_id) REFERENCES Kunde(id)
     
     );
+ksenia
 
     
      
