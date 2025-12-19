@@ -11,6 +11,3 @@ CREATE TABLE todos (
     due DATETIME,
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
-
-    
-     
